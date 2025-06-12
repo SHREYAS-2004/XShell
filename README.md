@@ -2,11 +2,11 @@
 
 ## Functionalities
 
-This project implements a simple custom terminal (shell) in C with the following features:
+This project implements a custom terminal (shell) in C with the following features:
 
 - **Colored Prompt:** Displays a colored prompt showing the username, hostname, and current working directory.
 - **Command Input:** Reads user input in raw mode, supporting basic line editing (backspace).
-- **Built-in Commands:**
+- **Custom Commands:**
   - `cd [dir]` – Change the current directory. If no directory is given, goes to the home directory. Supports `cd ..` for parent directory.
   - `ls` – Lists files in the current directory.
   - `echo [args...]` – Prints the given arguments to the terminal.
@@ -35,7 +35,8 @@ cd XShell
 1. **Build the project** (requires GCC):
 
    ```sh
-    gcc -o XShell main.c exec.c terminal.c utils.c     commands/cd.c commands/ls.c commands/pwd.c commands/user.c     commands/mkdir.c commands/echo.c commands/rmdir.c
+   chmod +x run.sh
+   ./run.sh
    ```
 
 2. **Run the shell:**
