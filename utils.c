@@ -1,6 +1,12 @@
 #include "terminal.h"
 
 void parseAndExecute(char *input) {
+    // Remove trailing newline if any
+    size_t len = strlen(input);
+    if(len > 0 && input[len-1] == '\n') {
+        input[len-1] = '\0';
+    }
+
     char *args[64];
     int i = 0;
     char *token = strtok(input, " ");

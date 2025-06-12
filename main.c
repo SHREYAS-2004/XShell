@@ -41,7 +41,7 @@ int main() {
         }
 
         // Print prompt with colors
-        printf(RED "MyShell>" GREEN "%s@%s:" BLUE "%s" RESET "$ " , username, hostname, cwd);
+        printf(RED "XShell>" GREEN "%s@%s:" BLUE "%s" RESET "$ " , username, hostname, cwd);
         fflush(stdout);
 
         readLine(input, MAX_INPUT);

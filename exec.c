@@ -14,7 +14,11 @@ void executeCommand(char **args){
         printWorkingDirectory(args);
     } else if (strcmp(args[0], "whoami") == 0){
         printUserName(args);
-    } else{
+    } else if (strcmp(args[0], "mkdir") == 0){
+        makeDirectory(args);
+    } else if(strcmp(args[0], "rmdir") == 0){
+        removeDirectory(args);
+    }else{
         write(STDOUT_FILENO, "Unknown command\n", 17);
     }
 }

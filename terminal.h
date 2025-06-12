@@ -1,13 +1,16 @@
 #ifndef TERMINAL_H
 #define TERMINAL_H
 
+#ifdef MAX_INPUT
+#undef MAX_INPUT
+#endif
+#define MAX_INPUT 4096
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
 #include<termios.h>
 #include<string.h>
-
-#define MAX_INPUT 1024
 
 void enableRawMode();
 void disableRawMode();
@@ -20,6 +23,8 @@ void listDirectory(char **args);
 void echoInput(char **args);
 void printWorkingDirectory(char **args);
 void printUserName(char **args);
+void makeDirectory(char **args);
+void removeDirectory(char **args);
 
 
 #endif
