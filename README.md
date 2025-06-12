@@ -15,6 +15,10 @@ This project implements a simple custom terminal (shell) in C with the following
   - `exit` – Exits the shell.
 - **Unknown Command Handling:** Prints an error message for unrecognized commands.
 
+## Compatibility:
+
+This project uses - `termios` - for terminal control and works on all Unix and Unix-like systems, including macOS. **It does not support Windows.**
+
 ## How to Clone
 
 Clone the repository using:
