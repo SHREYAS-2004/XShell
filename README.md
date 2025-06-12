@@ -20,7 +20,7 @@ This project implements a simple custom terminal (shell) in C with the following
 Clone the repository using:
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/SHREYAS-2004/XShell.git
 cd XShell
 ```
 
