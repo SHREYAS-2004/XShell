@@ -13,6 +13,8 @@ This project implements a simple custom terminal (shell) in C with the following
   - `pwd` – Prints the current working directory.
   - `whoami` – Prints the current user's username.
   - `exit` – Exits the shell.
+  - `mkdir` - Creates a directory.
+  - `rmdir` - Removes an empty directory.
 - **Unknown Command Handling:** Prints an error message for unrecognized commands.
 
 ## Compatibility:
@@ -33,7 +35,7 @@ cd XShell
 1. **Build the project** (requires GCC):
 
    ```sh
-   gcc -o XShell main.c terminal.c utils.c exec.c commands.c
+    gcc -o XShell main.c exec.c terminal.c utils.c     commands/cd.c commands/ls.c commands/pwd.c commands/user.c     commands/mkdir.c commands/echo.c commands/rmdir.c
    ```
 
 2. **Run the shell:**
