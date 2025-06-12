@@ -24,8 +24,6 @@ git clone https://github.com/SHREYAS-2004/XShell.git
 cd XShell
 ```
 
-Replace `<repository-url>` with the actual URL of your repository.
-
 ## How to Run
 
 1. **Build the project** (requires GCC):
