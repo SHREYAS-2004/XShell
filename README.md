@@ -1,4 +1,4 @@
-# Custom Terminal (MyShell)
+# Custom Terminal (XShell)
 
 ## Functionalities
 
@@ -29,13 +29,13 @@ cd XShell
 1. **Build the project** (requires GCC):
 
    ```sh
-   gcc -o myshell main.c terminal.c utils.c exec.c commands.c
+   gcc -o XShell main.c terminal.c utils.c exec.c commands.c
    ```
 
 2. **Run the shell:**
 
    ```sh
-   ./myshell
+   ./XShell
    ```
 
 You will see a colored prompt. Enter commands as described above.
